@@ -1,2 +1,0 @@
-Warsztaty
-Aleksandra Kurek
