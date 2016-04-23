@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'), url('../fonts/raleway-regular-webfont.woff') format('woff'), url('../fonts/raleway-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: white;
+    font-family: 'ralewayregular';
+    font-size: 16px;
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    color: white;
+}
+.header_logo {
+    text-align: left;
+    display: inline-block;
+    float: left;
+    color: white;
+    padding-top: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.header_logo span {
+    color: #26c7a9;
+    font-size: inherit;
+}
+.header_nav {
+    text-transform: uppercase;
+    text-align: right;
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    font-size: 15px;
+}
+.header_nav li {
+    display: inline-block;
+    padding-left: 20px;
+}
+.header_width {
+    margin-left: 200px;
+    width: 1060px;
+    height: 80px;
+    /*   border: 1px solid red;  ramka pomocnicza */
+    background-color: black;
+    color: white;
+}
+
+/* SECTION IMAGE + TEXT */
+
+.section_background {
+    width: 100%;
+    background-image: linear-gradient(180deg, white, grey);
+}
+.section_width {
+    margin-top: 0;
+    margin-left: 200px;
+    width: 1060px;
+    height: 400px;
+    background-image: linear-gradient(180deg, white, grey);
+    /*   border: 1px solid red;   ramka pomocnicza */
+}
+.section_width span {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.section_width p {
+    font-size: 18px;
+}
+.section_image {
+    width: 475px;
+    height: 300px;
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    float: left;
+    /* border: 1px solid red;  ramka pomocnicza */
+}
+.section_article {
+    width: 475px;
+    height: 300px;
+    float: right;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    text-align: center;
+    font-weight: lighter;
+    /*    border: 1px solid red;   ramka pomocnicza */
+}
+.section_article h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.section_article h1 span {
+    color: #26c7a9;
+    font-size: inherit;
+}
+.myButton {
+    background-color: #26c7a9;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 13px 32px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+.myButton:hover {
+    background-color: #408c99;
+}
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* SECTION WITH 3 IMAGES */
+
+.background {
+    background-color: black;
+    width: 100%;
+}
+.section_img_width {
+    margin-top: 0px;
+    margin-left: 200px;
+    width: 1060px;
+    height: 250px;
+    /*  border: 1px solid red;   ramka pomocnicza */
+}
+.img_section2 {
+    width: 320px;
+    height: 200px;
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#img_left {
+    float: left;
+}
+#img_center {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#img_right {
+    float: right;
+}
+
+/* SECTION PRICE LIST */
+
+.background_section_price_list {
+    width: 100%;
+    background-color: lightgrey;
+}
+.price_item {
+    border: 2px solid grey;
+}
+.section_price_list {
+    box-sizing: border-box;
+    /*border: 1px solid red;
+    ramka pomocnicza*/
+    width: 1060px;
+    margin-left: 200px;
+}
+.section_price_list div {
+    position: relative;
+    width: 300px;
+    background-color: white;
+}
+.section_price_list .circle {
+    background: grey;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px grey;
+    width: 20px;
+    border: 20px solid white;
+    background: grey;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    top: 0;
+}
+.section_price_list h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 80px;
+}
+.section_price_list .tekst {
+    padding: 40px;
+    text-indent: 40px;
+    text-align: center;
+}
+.section_price_list{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section_price_list #ramka1 {
+    margin: 45px 10px 10px 10px;
+    display: inline-block;
+}
+.section_price_list #ramka2 {
+    margin: 45px 10px 10px 10px;
+    display: inline-block;
+    background-color: #26c7a9;
+}
+.section_price_list #ramka3 {
+    margin: 45px 10px 10px 10px;
+    display: inline-block;
+}
+#ramka1 h2, #ramka3 h2 {
+    color: #26c7a9;
+}
+
+
+
+/* SECTION FORM */
+
+.background_section_form {
+    width: 100%;
+    background-color: white;
+}
+.section_form_width {
+    margin-top: 0;
+    margin-left: 200px;
+    width: 1060px;
+    height: 350px;
+    /*border: 1px solid red;
+    ramka pomocnicza */
+}
+.section_title_underline {
+    border-bottom: 8px solid #26c7a9;
+    width: 300px;
+    margin-top: 0;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 40px;
+    font-weight: lighter;
+}
+
+.section_form_content {
+    width: 500px;
+    margin-left: 530px;
+    margin-top: -300px;
+
+    /* border: 1px solid red;ramka pomocnicza */
+    display: inline-block;
+
+}
+input {
+    width: 500px;
+    font-weight: lighter;
+    font-size: 35px;
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+    border: 0.5px solid #26c7a9;
+    text-align: top;
+}
+#message {
+    height: 175px;
+    text-align: top ;
+}
+
+.form_check{
+  padding-top: 50px;
+}
+
+/* FOOTER */
+
+footer {
+  padding-top: 120px;
+    margin-top: 40px;
+    margin-left: 200px;
+    width: 1000px;
+    height: 50px;
+    /*border: 1px solid red;   ramka pomocnicza */
+    color: grey;
+    text-transform: uppercase;
+    /* border: 1px solid red;  ramka pomocnicza */
+}
+.footer_box_copyright {
+    float: left;
+}
+.footer_box_social {
+    position: relative;
+    display: inline;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    /*  border: 1px solid red;   ramka pomocnicza */
+}
+.footer_box_logo {
+    float: right;
+}
+.footer_box_logo span {
+    font-weight: 800;
+}
+
+/* SELEDYNOWY #26c7a9 */
