@@ -232,30 +232,60 @@ li.dropdown {
 
 /*GALLERY - obrazki */
 
-.gallery_box {
+.gallery_box, .gallery_box_text {
     float: left;
 }
-.gallery_box h4 {
+
+.image_box {
+    position: relative;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    height: 225px;
+
+}
+
+.image1{
+  background-image: url(../imagesOk/box1_img.jpg);
+}
+
+.image2{
+  background-image: url(../imagesOk/box2_img.jpg);
+}
+
+.image_box_description {
+
+    background: rgba(255, 255, 240, 0.4);
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    left: 0;
+
+}
+
+.image_box h4 {
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    font-weight: bolder;
+
+}
+
+.image_box div {
+  border-bottom: 7px solid #26c7a9;
+  width: 140px;
+}
+
+.gallery_box_text h4 {
     border-bottom: 7px solid #26c7a9;
     width: 140px;
     font-size: 16px;
     color: black;
     font-weight: bolder;
 }
-.image_box {
-    position: relative;
-    margin: 20px 0;
-    box-sizing: border-box;
-    border: 1px solid lightgrey;
-}
-.image_box_description {
-    background: rgba(255, 255, 240, 0.4);
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-}
+
 .text_box {
     border: 1px solid lightgrey;
     box-sizing: border-box;
