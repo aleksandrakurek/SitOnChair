@@ -47,7 +47,7 @@
     <!-- SLIDER - obrazki + tekst  -->
 
 
-    <header class="main_header">
+    <!-- <header class="main_header">
         <div class="container">
 
             <a class="accent_color nav_btn" id="nextPicture" href="#">&lt;</a>
@@ -76,12 +76,12 @@
             <a class="accent_color nav_btn" id="prevPicture" href="#">&gt;</a>
 
         </div>
-    </header>
+    </header> -->
 
 
     <!-- GALLERY - obrazki -->
 
-    <section>
+    <!-- <section>
         <div class="container">
 
 
@@ -118,12 +118,12 @@
         <div class="clear"></div>
 
 
-    </section>
+    </section> -->
 
 
     <!-- SECTION PRICE LIST -->
 
-    <section class="pricing">
+    <!-- <section class="pricing">
         <div class="container">
 
             <div class="col-sm section_title_box">
@@ -210,7 +210,7 @@
 
 
         </div>
-    </section>
+    </section> -->
 
 
     <!-- SECTION ORDERING -->
@@ -225,101 +225,115 @@
                 <h3 class="section_title_text">Skomponuj krzesło</h3>
             </div>
 
-            <div class="col-sm section_title_box ">
-                <!-- <div class="col-sm section_calculate"> -->
-                <h2 class="section_title_text">Podsumowanie</h2>
-            </div>
-
-            <div class="clear"></div>
 
             <!-- Pierwsza kolumna -->
 
-            <div class="col-sm select_choice">
-
-                <form id="form_select">
-                    <select name="type" class="select_chair" id="type_of_chair">
-                        <option value="" disabled selected style="display:none">Wybierz rodzaj</option>
-                        <option value="clair" data-price="500">Chair Clair</option>
-                        <option value="margarita" data-price="800">Chair Margarita</option>
-                        <option value="selena" data-price="300">Chair Selena</option>
-                    </select>
-
-                    <select name="color" class="select_chair" id="color_of_chair">
-                        <option value="" disabled selected style="display:none">Wybierz kolor</option>
-                        <option value="Czerwony">Czerwony</option>
-                        <option value="Czarny">Czarny</option>
-                        <option value="Pomarańczowy">Pomarańczowy</option>
-                    </select>
-
-                    <select name="fabric" class="select_chair" id="type_of_fabric">
-                        <option value="" disabled selected style="display:none">Wybierz materiał</option>
-                        <option value="Tkanina">Tkanina</option>
-                        <option value="Skóra">Skóra</option>
-                    </select>
+            <div class="col-sm">
+                <div class="vertically_align">
 
 
-                    <div class="checkbox checkbox1">
+                    <form>
+                        <select name="type" class="select_chair" id="type_of_chair">
+                            <option value="" disabled selected style="display:none">Wybierz rodzaj</option>
+                            <option value="clair">Chair Clair</option>
+                            <option value="margarita">Chair Margarita</option>
+                            <option value="selena">Chair Selena</option>
+                        </select>
+
+                        <select name="color" class="select_chair">
+                            <option value="" disabled selected style="display:none">Wybierz kolor</option>
+                            <option value="clair">Czerwony</option>
+                            <option value="margarita">Czarny</option>
+                            <option value="selena">Pomarańczowy</option>
+                        </select>
+
+                        <select name="fabric" class="select_chair" id="type_of_fabric">
+                            <option value="" disabled selected style="display:none">Wybierz materiał</option>
+                            <option value="clair">Tkanina</option>
+                            <option value="margarita">Skóra</option>
+                        </select>
+
+                    </form>
+
+                    <div class="checkbox">
                         <input type="checkbox" id="transport">
                         <label for="transport">Transport</label>
                     </div>
 
-                </form>
-
+                </div>
             </div>
-
 
 
 
             <!-- Druga kolumna -->
 
             <div class="col-sm section_chair_img">
-                <img src="imagesOk/red_chair.png" />
+              <div class="vertically_align">
+
+                <img src="imagesOk/red_chair.png" class = "chair_order"/>
+
+                </div>
             </div>
 
 
 
             <!-- Trzecia kolumna -->
 
+            <div class="col-sm section_title_box ">
+                <!-- <div class="col-sm section_calculate"> -->
+                <h2 class="section_title_text">Podsumowanie</h2>
+            </div>
+
+
+
             <div class="col-sm price_calculate">
-                <div class="calculate_chair_price">
+                <div class="calculate_chair_price vertical-align">
 
-                    <div class="price_calculate_table_choice">
-
-                        <span id="chair_of_choice" class="accent_color">
-                        Twój fotel:</span>
-                        <br/>
-                        <span id="fabric_of_choice" class="accent_color">
-                        Tkanina: </span>
-                        <br/>
-                        <span id="transport_of_choice" class="accent_color">
-                        Bez transportu:  </span>
-                        <br/>
+                    <div class="chair_type calculate_text accent_color">
+                        Twój fotel:
                     </div>
 
-
-                    <div class="price_calculate_table_cost">
-                        <span id="chosenChairCost" class="accent_color"></span>
-                        <br/>
-                        <span id="chosenMaterialCost" class="accent_color"></span>
-                        <br/>
-                        <span id="chosenTransportCost" class="accent_color"></span>
-                        <br/>
+                    <div class="fabric_type calculate_text accent_color">
+                        Tkanina
                     </div>
 
-
-
-                    <div class="overall_price_calculator">
-                        <span> Suma</span>
-                        <span id="chair_type_price_calculate"> 0</span>
+                    <div class="transport_type calculate_text accent_color">
+                        Bez transportu
                     </div>
 
                 </div>
 
-                <a href="#" class="myButton"> Zamów </a>
+                <div class="overall_price_calculator vertically_align">
+
+                    <div class="chair_type_price calculate_text accent_color">
+                        0
+                    </div>
+
+                    <div class="fabric_type_price calculate_text accent_color">
+                        0
+                    </div>
+
+                    <div class="transport_type_price  calculate_text accent_color">
+                        0
+                    </div>
+
+                </div>
+
+                <div class="summary_price">
+                    SUMA
+                    <div class="total_sum accent_color">
+                        0
+                    </div>
+
+                    <div class="summary_price_btn">
+                        <a href="#" class="myButton"> Zamów </a>
+                    </div>
+
+                </div>
             </div>
 
-
             <div class="clear"></div>
+
 
         </div>
     </section>
@@ -328,7 +342,7 @@
 
     <!-- SECTION FORM -->
 
-    <div class="contact">
+    <!-- <div class="contact">
         <div class="container">
 
             <div class="col-sm section_title_box">
@@ -344,12 +358,12 @@
             </div>
 
             <div class="col-md contact_send">
-                <img src="imagesOk/red_chair.png">
+                <img src="imagesOk/red_chair.png"> -->
 
 
-                <!-- CHECKBOX -->
+    <!-- CHECKBOX -->
 
-                <div class="checkbox">
+    <!-- <div class="checkbox">
                     <input type="checkbox" id="agree">
                     <label for="agree">Zgadzam się na przetwarzanie danych osobowych</label>
                 </div>
@@ -366,12 +380,12 @@
 
 
         <div class="clear"></div>
-        </section>
+        </section> -->
 
 
-        <!-- FOOTER -->
+    <!-- FOOTER -->
 
-        <footer class="footer">
+    <!-- <footer class="footer">
             <div class="container">
 
                 <div class="col-lg footer_copyright">
@@ -390,7 +404,7 @@
 
 
             </div>
-        </footer>
+        </footer> -->
 
 
 

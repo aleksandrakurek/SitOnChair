@@ -9,16 +9,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     pictures[currentVisiblePicture].classList.add("visible");
 
-    prevButton.addEventListener("click", function (event) {
+    prevButton.addEventListener("click", function(event) {
 
-      pictures[currentVisiblePicture].classList.remove("visible");
-      currentVisiblePicture -- ;
+        pictures[currentVisiblePicture].classList.remove("visible");
+        currentVisiblePicture--;
 
-      if (currentVisiblePicture < 0) {
-          currentVisiblePicture = pictures.length - 1;
-      }
+        if (currentVisiblePicture < 0) {
+            currentVisiblePicture = pictures.length - 1;
+        }
 
-      pictures[currentVisiblePicture].classList.add("visible");
+        pictures[currentVisiblePicture].classList.add("visible");
 
     });
 
@@ -51,6 +51,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         }); // zamkniecie eventu mouseout
     } // zamkniecie for
+
+
+
+    // PRICE calculator
+
+
+
 
 
 

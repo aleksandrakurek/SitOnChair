@@ -125,6 +125,7 @@ ul, a, h1, h2, h3, h4, h5, h6 {
 }
 
 /*DROPDOWN MENU*/
+
 .nav_menu li {
     display: inline;
     padding-right: 60px;
@@ -139,7 +140,7 @@ li a {
     line-height: normal;
 }
 li a:hover, .dropdown:hover {
-    font-size: 18px;
+    color: #a3e2d7;
     font-weight: bolder;
 }
 li.dropdown {
@@ -175,13 +176,14 @@ li.dropdown {
     text-align: left;
 }
 .dropdown-content a:hover {
-    background-color: lightgrey;
-    color: grey;
+    background-color: #a3e2d7;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 /*SLIDER - obrazki + tekst*/
 
@@ -229,14 +231,11 @@ li.dropdown {
     font-size: 24px;
     padding: 17px 40px;
 }
-
-
-.slider img{
-  display: none;
+.slider img {
+    display: none;
 }
-
-.slider .visible{
-  display: inline-block;
+.slider .visible {
+    display: inline-block;
 }
 
 /*GALLERY - obrazki */
@@ -244,26 +243,20 @@ li.dropdown {
 .gallery_box, .gallery_box_text {
     float: left;
 }
-
 .image_box {
     position: relative;
     margin: 20px 0;
     box-sizing: border-box;
     border: 1px solid lightgrey;
     height: 225px;
-
 }
-
-.image1{
-  background-image: url(../imagesOk/box1_img.jpg);
+.image1 {
+    background-image: url(../imagesOk/box1_img.jpg);
 }
-
-.image2{
-  background-image: url(../imagesOk/box2_img.jpg);
+.image2 {
+    background-image: url(../imagesOk/box2_img.jpg);
 }
-
 .image_box_description {
-
     background: rgba(255, 255, 240, 0.4);
     position: absolute;
     bottom: 20px;
@@ -271,22 +264,17 @@ li.dropdown {
     box-sizing: border-box;
     padding: 20px;
     left: 0;
-
 }
-
 .image_box h4 {
     width: 100%;
     font-size: 16px;
     color: black;
     font-weight: bolder;
-
 }
-
 .image_box div {
-  border-bottom: 7px solid #26c7a9;
-  width: 140px;
+    border-bottom: 7px solid #26c7a9;
+    width: 140px;
 }
-
 .gallery_box_text h4 {
     border-bottom: 7px solid #26c7a9;
     width: 140px;
@@ -294,7 +282,6 @@ li.dropdown {
     color: black;
     font-weight: bolder;
 }
-
 .text_box {
     border: 1px solid lightgrey;
     box-sizing: border-box;
@@ -441,6 +428,119 @@ li.dropdown {
     box-shadow: 0 0 0 2px #26c7a9;
 }
 
+/*SECTION ORDERING*/
+
+
+
+.ordering {
+  margin: 20px 0;
+}
+
+.ordering .section_title_box:nth-of-type(1)  {
+  float: left;
+}
+
+.ordering .section_title_box:nth-of-type(2) {
+  float: right;
+  text-align: right;
+}
+
+.select_choice {
+  float: left;
+}
+
+.select_choice input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}
+
+.select_choice label {
+  font-size: 22px;
+  color: #aeaeae;
+  float: left;
+}
+
+
+.checkbox1 label {
+  padding-top: 15px;
+}
+
+.select_chair {
+  width: 100%;
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 13px 0;
+  border: 1px solid #a3e2d7;
+  color: #cacaca;
+}
+
+.section_chair_img {
+  float: left;
+  text-align: center;
+}
+
+.price_calculate {
+  float: left;
+  text-align: center;
+}
+
+.calculate_chair_price {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 0;
+  text-align: left;
+}
+
+.price_calculate_table_choice {
+  width: 65%;
+  height: 70%;
+  box-sizing: border-box;
+  border-right: 2px solid white;
+  float: left;
+  font-size: 20px;
+  color: grey;
+}
+
+.price_calculate_table_cost {
+  width: 35%;
+  height: 70%;
+  float: left;
+  font-size: 20px;
+  text-align: right;
+  color: #27c7ab;
+}
+
+.overall_price_calculator {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  border-top: 2px solid white;
+  font-size: 20px;
+  float: left;
+  padding-top: 5px;
+  color: grey;
+}
+
+
+
+#chair_type_price_calculate {
+  float: right;
+  color: #27c7ab;
+}
+
+
+.price_calculate .myButton {
+  margin-top: 15px;
+  padding: 10px 40px;
+  font-size: 20px;
+}
+
+
+
 /*SECTION FORM*/
 
 .contact_form, .contact_send {
@@ -485,12 +585,12 @@ li.dropdown {
     font-size: 30px;
 }
 
+
 /*CHECKBOX*/
 
-
-/**, *:after, *:before {
-    box-sizing: border-box;
-}*/
+*, *:after, *:before {
+    *box-sizing: border-box;
+  }
 
 .checkbox {
     position: relative;
@@ -531,6 +631,7 @@ li.dropdown {
     color: #c2c2c2;
     font-weight: 100;
     font-family: ralewayregular;
+
 }
 
 /*FOOTER*/
