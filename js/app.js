@@ -1,11 +1,47 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    // SLIDER
+
+    var prevButton = document.getElementById("prevPicture");
+    var nextButton = document.getElementById("nextPicture");
+    var pictures = document.querySelectorAll(".slider img");
+    var currentVisiblePicture = 0;
+
+    pictures[currentVisiblePicture].classList.add("visible");
+
+    prevButton.addEventListener("click", function (event) {
+
+      pictures[currentVisiblePicture].classList.remove("visible");
+      currentVisiblePicture -- ;
+
+      if (currentVisiblePicture < 0) {
+          currentVisiblePicture = pictures.length - 1;
+      }
+
+      pictures[currentVisiblePicture].classList.add("visible");
+
+    });
+
+    nextButton.addEventListener("click", function(event) {
+        // console.log("Click in next button");
+        pictures[currentVisiblePicture].classList.remove("visible");
+        currentVisiblePicture++;
+
+        if (currentVisiblePicture > (pictures.length - 1)) {
+            currentVisiblePicture = 0;
+        }
+
+        pictures[currentVisiblePicture].classList.add("visible");
+
+    });
+
+
     // GALLERY - znikajacy element z nazwa
 
     var imageBox = document.querySelectorAll(".image_box");
 
     for (var i = 0; i < imageBox.length; i++) {
-      
+
         imageBox[i].addEventListener("mouseover", function(event) {
             this.firstElementChild.style.display = "none";
         }); // zamkniecie eventu mouseenter
@@ -22,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
 });
+
+
 // ------------------------DROP DOWN MENU-----------------------------------
 // var listElements = document.querySelectorAll(".drop_down ul li");
 //

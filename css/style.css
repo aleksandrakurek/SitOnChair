@@ -230,6 +230,15 @@ li.dropdown {
     padding: 17px 40px;
 }
 
+
+.slider img{
+  display: none;
+}
+
+.slider .visible{
+  display: inline-block;
+}
+
 /*GALLERY - obrazki */
 
 .gallery_box, .gallery_box_text {
