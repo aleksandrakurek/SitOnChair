@@ -16,31 +16,36 @@
         <div class="main_nav">
             <div class="containter">
 
+                <div class="nav_main_header">
 
-                <a class="nav_logo" href="#"> Sit <span class="accent_color">on</span> chair </a>
 
-                <ul class="nav_menu">
+                    <a class="nav_logo" href="#"> Sit <span class="accent_color">on</span> chair </a>
 
-                    <li class="dropdown"><a href="#">o firmie</a>
+                    <ul class="nav_menu">
 
-                        <div class="border">
-                            <div class="dropdown-content">
+                        <li class="dropdown">
 
-                                <a href="#news">Aktualności</a>
-                                <a href="#team">Nasz team</a>
-                                <a href="#history">Historia</a>
+                            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">o firmie</a>
 
-                            </div>
-                    </li>
+                            <div class="border">
+                                <div class="dropdown-content" id="myDropdown">
 
-                    <li><a href="#gallery">galeria</a></li>
-                    <li><a href="#contact">kontakt</a></li>
-                    </div>
-                </ul>
+                                    <a href="#news">Aktualności</a>
+                                    <a href="#team">Nasz team</a>
+                                    <a href="#history">Historia</a>
 
+                                </div>
+                        </li>
+
+                        <li><a href="#gallery">galeria</a></li>
+                        <li><a href="#contact">kontakt</a></li>
+                        </div>
+                    </ul>
+
+
+                </div>
 
             </div>
-        </div>
     </nav>
 
 
@@ -221,12 +226,12 @@
         <div class="container">
 
             <div class="col-sm section_title_box">
-                <!-- <div class="col-sm section_chair_choice"> -->
+
                 <h3 class="section_title_text">Skomponuj krzesło</h3>
             </div>
 
             <div class="col-sm section_title_box ">
-                <!-- <div class="col-sm section_calculate"> -->
+
                 <h2 class="section_title_text">Podsumowanie</h2>
             </div>
 
@@ -288,8 +293,11 @@
                         <span id="chair_of_choice" class="accent_color">
                         Twój fotel:</span>
                         <br/>
+                        <span id="color_of_choice" class="accent_color">
+                        Kolor: </span>
+                        <br/>
                         <span id="fabric_of_choice" class="accent_color">
-                        Tkanina: </span>
+                        Materiał: </span>
                         <br/>
                         <span id="transport_of_choice" class="accent_color">
                         Bez transportu:  </span>
@@ -299,6 +307,8 @@
 
                     <div class="price_calculate_table_cost">
                         <span id="chosenChairCost" class="accent_color"></span>
+                        <br/>
+                        <span id="chosenColorCost" class="accent_color"></span>
                         <br/>
                         <span id="chosenMaterialCost" class="accent_color"></span>
                         <br/>

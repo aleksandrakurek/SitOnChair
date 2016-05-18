@@ -78,7 +78,6 @@ ul, a, h1, h2, h3, h4, h5, h6 {
     width: 610px;
     margin: 0 15px;
 }
-
 .clear {
     clear: both;
 }
@@ -97,33 +96,25 @@ ul, a, h1, h2, h3, h4, h5, h6 {
 
 /*Nawigacja- LOGO i MENU*/
 
-.nav_main_header{
-  width: 940px;
-  margin: 0 auto;
-
-}
-
 .main_nav {
     background-color: black;
     height: 40px;
     color: white;
     line-height: 40px;
     width: 100%;
-    margin: 0 auto;
 }
 .nav_logo {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    margin: 0 auto;
-
+    margin-left: 200px;
 }
 .nav_menu {
-    padding: 0;
-    float: right;
-    margin: 0 auto;
-    list-style-type: none;
-    overflow: hidden;
+      padding: 0;
+      float: right;
+      margin-right: 200px;
+      list-style-type: none;
+      overflow: hidden;
 }
 
 /*DROPDOWN MENU*/
@@ -133,6 +124,7 @@ ul, a, h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     text-decoration: none;
 }
+
 li a, .dropbtn {
     display: inline-block;
     color: white;
@@ -172,6 +164,7 @@ li.dropdown {
 .show {
     display: block;
 }
+
 .dropdown-content:before {
     content: "";
     border-left: 16px solid transparent;

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>SIT ON CHAIR</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/app.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style_dropdown.css">
+    <script src="js/app_dropdown.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -21,33 +21,54 @@
 
                 <ul class="nav_menu">
 
-                    <li class="dropdown"><a href="#">o firmie</a>
 
+                    <li class="dropdown">
+                        <!-- <a class="dropbtn" onclick="myFunction()">o firmie</a> -->
+                          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">o firmie</a>
                         <div class="border">
-                            <div class="dropdown-content">
-
+                            <div class="dropdown-content" id="myDropdown">
                                 <a href="#news">Aktualności</a>
                                 <a href="#team">Nasz team</a>
                                 <a href="#history">Historia</a>
-
                             </div>
                     </li>
-
-                    <li><a href="#gallery">galeria</a></li>
-                    <li><a href="#contact">kontakt</a></li>
+                    <li><a href="#home">galeria</a></li>
+                    <li><a href="#news">kontakt</a></li>
                     </div>
-                </ul>
-
-
+                  </ul>
             </div>
         </div>
     </nav>
 
 
+    <!-- <script>
+        /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script> -->
+
+
     <!-- SLIDER - obrazki + tekst  -->
 
-
-    <!-- <header class="main_header">
+    <!--
+    <header class="main_header">
         <div class="container">
 
             <a class="accent_color nav_btn" id="nextPicture" href="#">&lt;</a>
@@ -217,126 +238,117 @@
 
 
 
-    <section class="ordering">
+    <!-- <section class="ordering">
         <div class="container">
 
-            <div class="col-sm section_title_box">
-                <!-- <div class="col-sm section_chair_choice"> -->
-                <h3 class="section_title_text">Skomponuj krzesło</h3>
+            <div class="col-sm section_title_box"> -->
+    <!-- <div class="col-sm section_chair_choice"> -->
+    <!-- <h3 class="section_title_text">Skomponuj krzesło</h3> -->
+    <!-- </div> -->
+
+    <!-- <div class="col-sm section_title_box "> -->
+    <!-- <div class="col-sm section_calculate"> -->
+    <!-- <h2 class="section_title_text">Podsumowanie</h2>
             </div>
 
+            <div class="clear"></div> -->
 
-            <!-- Pierwsza kolumna -->
+    <!-- Pierwsza kolumna -->
 
-            <div class="col-sm">
-                <div class="vertically_align">
+    <!-- <div class="col-sm select_choice">
+
+                <form id="form_select">
+                    <select name="type" class="select_chair" id="type_of_chair">
+                        <option value="" disabled selected style="display:none">Wybierz rodzaj</option>
+                        <option value="clair" data-price="500">Chair Clair</option>
+                        <option value="margarita" data-price="800">Chair Margarita</option>
+                        <option value="selena" data-price="300">Chair Selena</option>
+                    </select>
+
+                    <select name="color" class="select_chair" id="color_of_chair">
+                        <option value="" disabled selected style="display:none">Wybierz kolor</option>
+                        <option value="Czerwony">Czerwony</option>
+                        <option value="Czarny">Czarny</option>
+                        <option value="Pomarańczowy">Pomarańczowy</option>
+                    </select>
+
+                    <select name="fabric" class="select_chair" id="type_of_fabric">
+                        <option value="" disabled selected style="display:none">Wybierz materiał</option>
+                        <option value="Tkanina">Tkanina</option>
+                        <option value="Skóra">Skóra</option>
+                    </select>
 
 
-                    <form>
-                        <select name="type" class="select_chair" id="type_of_chair">
-                            <option value="" disabled selected style="display:none">Wybierz rodzaj</option>
-                            <option value="clair">Chair Clair</option>
-                            <option value="margarita">Chair Margarita</option>
-                            <option value="selena">Chair Selena</option>
-                        </select>
-
-                        <select name="color" class="select_chair">
-                            <option value="" disabled selected style="display:none">Wybierz kolor</option>
-                            <option value="clair">Czerwony</option>
-                            <option value="margarita">Czarny</option>
-                            <option value="selena">Pomarańczowy</option>
-                        </select>
-
-                        <select name="fabric" class="select_chair" id="type_of_fabric">
-                            <option value="" disabled selected style="display:none">Wybierz materiał</option>
-                            <option value="clair">Tkanina</option>
-                            <option value="margarita">Skóra</option>
-                        </select>
-
-                    </form>
-
-                    <div class="checkbox">
+                    <div class="checkbox checkbox1">
                         <input type="checkbox" id="transport">
                         <label for="transport">Transport</label>
                     </div>
 
+                </form>
+
+            </div> -->
+
+
+
+
+    <!-- Druga kolumna -->
+
+    <!-- <div class="col-sm section_chair_img">
+                <img src="imagesOk/red_chair.png" />
+            </div> -->
+
+
+
+    <!-- Trzecia kolumna -->
+
+    <!-- <div class="col-sm price_calculate">
+                <div class="calculate_chair_price">
+
+                    <div class="price_calculate_table_choice">
+
+                        <span id="chair_of_choice" class="accent_color">
+                        Twój fotel:</span>
+                        <br/>
+                        <span id="color_of_choice" class="accent_color">
+                        Kolor: </span>
+                        <br/>
+                        <span id="fabric_of_choice" class="accent_color">
+                        Materiał: </span>
+                        <br/>
+                        <span id="transport_of_choice" class="accent_color">
+                        Bez transportu:  </span>
+                        <br/>
+                    </div>
+
+
+                    <div class="price_calculate_table_cost">
+                        <span id="chosenChairCost" class="accent_color"></span>
+                        <br/>
+                        <span id="chosenColorCost" class="accent_color"></span>
+                        <br/>
+                        <span id="chosenMaterialCost" class="accent_color"></span>
+                        <br/>
+                        <span id="chosenTransportCost" class="accent_color"></span>
+                        <br/>
+                    </div>
+
+
+
+                    <div class="overall_price_calculator">
+                        <span> Suma</span>
+                        <span id="chair_type_price_calculate"> 0</span>
+                    </div>
+
                 </div>
+
+                <a href="#" class="myButton"> Zamów </a>
             </div>
 
-
-
-            <!-- Druga kolumna -->
-
-            <div class="col-sm section_chair_img">
-              <div class="vertically_align">
-
-                <img src="imagesOk/red_chair.png" class = "chair_order"/>
-
-                </div>
-            </div>
-
-
-
-            <!-- Trzecia kolumna -->
-
-            <div class="col-sm section_title_box ">
-                <!-- <div class="col-sm section_calculate"> -->
-                <h2 class="section_title_text">Podsumowanie</h2>
-            </div>
-
-
-
-            <div class="col-sm price_calculate">
-                <div class="calculate_chair_price vertical-align">
-
-                    <div class="chair_type calculate_text accent_color">
-                        Twój fotel:
-                    </div>
-
-                    <div class="fabric_type calculate_text accent_color">
-                        Tkanina
-                    </div>
-
-                    <div class="transport_type calculate_text accent_color">
-                        Bez transportu
-                    </div>
-
-                </div>
-
-                <div class="overall_price_calculator vertically_align">
-
-                    <div class="chair_type_price calculate_text accent_color">
-                        0
-                    </div>
-
-                    <div class="fabric_type_price calculate_text accent_color">
-                        0
-                    </div>
-
-                    <div class="transport_type_price  calculate_text accent_color">
-                        0
-                    </div>
-
-                </div>
-
-                <div class="summary_price">
-                    SUMA
-                    <div class="total_sum accent_color">
-                        0
-                    </div>
-
-                    <div class="summary_price_btn">
-                        <a href="#" class="myButton"> Zamów </a>
-                    </div>
-
-                </div>
-            </div>
 
             <div class="clear"></div>
 
-
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -384,8 +396,8 @@
 
 
     <!-- FOOTER -->
-
-    <!-- <footer class="footer">
+    <!--
+        <footer class="footer">
             <div class="container">
 
                 <div class="col-lg footer_copyright">
